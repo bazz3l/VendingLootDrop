@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Oxide.Plugins
 {
-    [Info("Vending Loot Drop", "Bazz3l", "1.0.0")]
+    [Info("Vending Loot Drop", "Bazz3l", "1.0.1")]
     [Description("Drops vending machine loot when destroyed.")]
     class VendingLootDrop : RustPlugin
     {
@@ -20,7 +20,7 @@ namespace Oxide.Plugins
 
             if (machine.inventory.itemList.Count > 0)
             {
-                machine.inventory.Drop(_itemPrefab, machine.transform.position + (Vector3.up * 3), machine.transform.rotation);
+                machine.inventory.Drop(_itemPrefab, machine.transform.position + (Vector3.up * 0.3f), machine.transform.rotation);
             }
         }
         #endregion
