@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Oxide.Plugins
 {
-    [Info("Vending Loot Drop", "Bazz3l", "1.0.1")]
+    [Info("Vending Loot Drop", "Bazz3l", "1.0.2")]
     [Description("Drops vending machine loot when destroyed.")]
     class VendingLootDrop : RustPlugin
     {
