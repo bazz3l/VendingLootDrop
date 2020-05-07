@@ -20,7 +20,7 @@ namespace Oxide.Plugins
 
             if (machine.inventory.itemList.Count > 0)
             {
-                machine.inventory.Drop(_itemPrefab, machine.transform.position + (Vector3.up * 0.3f), machine.transform.rotation);
+                machine.inventory.Drop(_itemPrefab, machine.ServerPosition + (Vector3.up * 0.3f), machine.ServerRotation);
             }
         }
         #endregion
