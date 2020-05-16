@@ -5,14 +5,12 @@ namespace Oxide.Plugins
     class VendingLootDrop : RustPlugin
     {
         #region Oxide
-        void OnEntityDeath(VendingMachine machine)
+        void OnEntitySpawned(VendingMachine machine)
         {
-            if (machine == null || machine.inventory == null || machine.inventory.itemList == null)
+            if (machine != null)
             {
-                return;
+                machine.dropChance = 0.75f;
             }
-
-            machine.dropChance = 0.75f;
         }
         #endregion
     }
